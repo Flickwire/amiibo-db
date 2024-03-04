@@ -4,6 +4,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme';
 import { CssBaseline } from "@mui/material";
 import Providers from "./providers";
+import NavBar from "@/components/nav";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,6 +24,7 @@ export default function RootLayout({
           <ThemeProvider theme={theme}>
             <CssBaseline />
             <Providers>
+              <NavBar />
               {children}
             </Providers>
           </ThemeProvider>

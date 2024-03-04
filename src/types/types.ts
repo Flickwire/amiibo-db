@@ -1,5 +1,5 @@
 export type AmiiboResponse = {
-  amiibo?: (AmiiboEntity)[] | null;
+  amiibo: (AmiiboEntity)[] | AmiiboEntity | null;
 }
 
 export type AmiiboEntity = {
@@ -15,8 +15,8 @@ export type AmiiboEntity = {
 }
 
 export type Release = {
-  au?: string | null;
-  eu?: string | null;
-  jp?: string | null;
-  na?: string | null;
+  au: string | null;
+  eu: string | null;
+  jp: string | null;
+  na: string | null;
 }

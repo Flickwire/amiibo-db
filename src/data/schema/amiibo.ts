@@ -15,5 +15,5 @@ export const AmiiboSchema =
   })
 
 export const AmiiboListSchema = z.object({
-  amiibo: z.array(AmiiboSchema)
+  amiibo: z.union([z.array(AmiiboSchema), AmiiboSchema])
 })
